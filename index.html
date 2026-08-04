@@ -413,6 +413,7 @@
   const resultCard = document.getElementById('resultCard');
   const resultStamp = document.getElementById('resultStamp');
   const resultQuery = document.getElementById('resultQuery');
+  const fieldFecha = document.getElementById('fieldFecha');
   const fieldAgente = document.getElementById('fieldAgente');
   const fieldResultado = document.getElementById('fieldResultado');
   const fieldObservaciones = document.getElementById('fieldObservaciones');
@@ -494,6 +495,7 @@
         }
 
         resultQuery.textContent = raw;
+        setValue(fieldFecha, data.fecha);
         setValue(fieldAgente, data.agente);
         setValue(fieldResultado, data.resultado);
         setValue(fieldObservaciones, data.observaciones);
